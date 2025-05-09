@@ -40,8 +40,19 @@
         php artisan make:view layouts/default
         ```
     - 生成导航栏
-      ```bash
-      git add .
-      git commit -m "模板切分"
-      ```
+        ```bash
+        git add .
+        git commit -m "模板切分"
+        ```
+    - 可以通过以下命令查看所有的命令
+        ```bash
+        php artisan list
+        ```
+      
+- 提交代码到远程仓库
+    ```bash
+    git checkout main
+    git merge static-pages
+    git push
+    ```
     
