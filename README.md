@@ -1,7 +1,8 @@
-## Build a blog with Laravel 11.*
+# Build a blog with Laravel 11.*
+
 ---
 
-### ✨ 2025/05/09
+## 📅 2025/05/09
 
 #### 今天运行的命令
 
