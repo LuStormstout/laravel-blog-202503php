@@ -97,3 +97,9 @@
     git commit -m "完成注册页面"
     ```
   
+- 合并分支
+    ```bash
+    git checkout main
+    git merge filling-layout-style
+    git push
+    ```
