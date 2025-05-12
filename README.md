@@ -78,3 +78,9 @@
     git add .
     git commit -m "初始化样式"
     ```
+  
+- 完成拆分 _header.blade.php 和 _footer.blade.php
+    ```bash
+    git add .
+    git commit -m "完成拆分 _header.blade.php 和 _footer.blade.php"
+    ```
