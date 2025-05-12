@@ -90,3 +90,10 @@
     git add .
     git commit -m "完成 logo 引入以及跳转链接使用 route"
     ```
+  
+- 完成注册页面
+    ```bash
+    git add .
+    git commit -m "完成注册页面"
+    ```
+  
