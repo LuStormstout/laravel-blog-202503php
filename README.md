@@ -47,11 +47,28 @@
         ```bash
         php artisan list
         ```
-      
+
 - 提交代码到远程仓库
     ```bash
     git checkout main
     git merge static-pages
     git push
     ```
+
+## 📅 2025/05/09
     
+- 创建一个新的分支
+    ```bash
+    git checkout main
+    git checkout -b filling-layout-style
+    ```
+- 安装 laravel/ui
+    ```bash
+    composer require laravel/ui
+    php artisan ui bootstrap
+    ```
+  
+- 处理静态资源加载的问题,确认安装了 bootstrap sass
+    ```bash
+    npm install bootstrap sass --save-dev
+    ```
