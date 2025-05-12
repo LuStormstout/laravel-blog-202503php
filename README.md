@@ -72,3 +72,9 @@
     ```bash
     npm install bootstrap sass --save-dev
     ```
+  
+- 提交初始化样式
+    ```bash
+    git add .
+    git commit -m "初始化样式"
+    ```
