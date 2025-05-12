@@ -84,3 +84,9 @@
     git add .
     git commit -m "完成拆分 _header.blade.php 和 _footer.blade.php"
     ```
+  
+- 完成 logo 引入以及跳转链接使用 route
+    ```bash
+    git add .
+    git commit -m "完成 logo 引入以及跳转链接使用 route"
+    ```
