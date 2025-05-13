@@ -137,3 +137,12 @@
     git add -A
     git commit -m "安装 barryvdh/laravel-ide-helper"
     ```
+  
+- 完成用户注册功能
+    ```bash
+    git add -A
+    git commit -m "完成用户注册功能"
+    git checkout main
+    git merge sign-up
+    git push
+    ```
