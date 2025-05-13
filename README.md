@@ -123,3 +123,17 @@
     git add -A
     git commit -m "用户注册表单"
     ```
+  
+- 安装 barryvdh/laravel-ide-helper
+    ```bash
+    composer require --dev barryvdh/laravel-ide-helper
+    php artisan ide-helper:generate
+    php artisan ide-helper:meta
+    php artisan ide-helper:models
+    ```
+  
+- 安装完成之后提交
+    ```bash
+    git add -A
+    git commit -m "安装 barryvdh/laravel-ide-helper"
+    ```
