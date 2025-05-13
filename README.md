@@ -162,3 +162,8 @@
     git add -A
     git commit -m "实现登录功能"
     ```
+- 完成登录后的导航逻辑
+    ```bash
+    git add -A
+    git commit -m "完成登录后的导航逻辑"
+    ```
