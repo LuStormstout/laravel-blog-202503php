@@ -146,3 +146,19 @@
     git merge sign-up
     git push
     ```
+
+- 创建一个新的分支来开发登录登出功能
+    ```bash
+    git checkout main
+    git checkout -b login-logout
+    ```
+  
+- 创建 SessionsController
+    ```bash
+    php artisan make:controller SessionsController
+    ```
+- 实现登录功能
+    ```bash
+    git add -A
+    git commit -m "实现登录功能"
+    ```
