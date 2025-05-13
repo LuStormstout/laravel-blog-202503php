@@ -117,3 +117,9 @@
     git add -A
     git commit -m "用户显示页面"
     ```
+  
+- 完成用户注册页面
+    ```bash
+    git add -A
+    git commit -m "用户注册表单"
+    ```
