@@ -173,7 +173,7 @@
     git add -A
     git commit -m "完成登录登出功能"
     ```
-  
+
 - 完成记住我功能, 提交之后切换 main 分支 将 login-logout 分支合并到主分支, 并推送到远程仓库
     ```bash
     git add -A
@@ -182,15 +182,24 @@
     git merge login-logout
     git push
     ```
-  
+
 - 创建 user-crud 分支
     ```bash
     git checkout main
     git checkout -b user-crud
     ```
-  
+
 - 完成用户编辑功能
     ```bash
     git add -A
     git commit -m "完成用户编辑功能"
+    ```
+
+- 完成授权策略, 提交之后切换到 main 分支, 将 user-crud 分支合并到主分支, 并推送到远程仓库
+    ```bash
+    git add -A
+    git commit -m "完成授权策略"
+    git checkout main
+    git merge user-crud
+    git push
     ```
