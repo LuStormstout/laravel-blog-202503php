@@ -99,9 +99,12 @@ class UsersController extends Controller
      * @param Request $request
      * @param User $user
      * @return RedirectResponse
+     * @throws AuthorizationException
      */
     public function update(Request $request, User $user): RedirectResponse
     {
+        $this->authorize('update', $user);
+
         // Validate the request data
         $request->validate([
             'name' => 'required|string|max:50',
