@@ -268,4 +268,3 @@
     git merge account-activation-password-resets
     git push
     ```
-- ⚠️ 你们不要在主分支(main/master)上直接开发, 你们可以切换到我们的 account-activation-password-resets 分支上进行开发, 然后再合并到主分支上, 因为我们这个分支的内容还没有完全开发完, 明天我们会继续在这个分支上开发重置密码的功能
