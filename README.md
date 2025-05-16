@@ -268,3 +268,18 @@
     git merge account-activation-password-resets
     git push
     ```
+
+## 📅 2025/05/16
+
+- 创建一个新的分支
+    ```bash
+    git checkout main
+    git checkout -b user-statuses
+    ```
+  
+- 创建 statuses 表的数据迁移、模型
+    ```bash
+    php artisan make:migration create_statuses_table --create="statuses"
+    php artisan migrate
+    php artisan make:model Status
+    ```
