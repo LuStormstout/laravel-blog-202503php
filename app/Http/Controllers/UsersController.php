@@ -38,7 +38,7 @@ class UsersController extends Controller
      */
     public function index(): View
     {
-        $users = User::paginate($this->perPage); // 22:04
+        $users = User::paginate($this->perPage);
         return view('users.index', compact('users'));
     }
 
@@ -60,7 +60,9 @@ class UsersController extends Controller
      */
     public function show(User $user): View
     {
-        return view('users.show', compact('user'));
+        $statuses = $user->statuses()->orderBy('created_at', 'desc')->paginate($this->perPage);
+
+        return view('users.show', compact('user', 'statuses'));
     }
 
     /**

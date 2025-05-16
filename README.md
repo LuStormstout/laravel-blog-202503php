@@ -259,7 +259,7 @@
     ```bash
     php artisan ide-helper:models -W
     ```
-  
+
 - 开发完成用户激活功能
     ```bash
     git add -A
@@ -276,10 +276,43 @@
     git checkout main
     git checkout -b user-statuses
     ```
-  
+
 - 创建 statuses 表的数据迁移、模型
     ```bash
     php artisan make:migration create_statuses_table --create="statuses"
     php artisan migrate
     php artisan make:model Status
     ```
+
+- 提交代码
+    ```bash
+    git add -A
+    git commit -m "创建 statuses 表的数据迁移、模型"
+    ```
+
+- 大家要记住, 因为我们在使用 ide-helper 生成模型的注释, 所以在模型的属性发生变更的时候, 还有创建了新的模型的时候...,
+  去运行一下这个命令
+    ```bash
+    php artisan ide-helper:models
+    ```
+- 创建 StatusFactory
+    ```bash
+    php artisan make:factory StatusFactory
+    ```
+
+- 创建 StatusesTableSeeder, 在编辑完成之后需要去在 [DatabaseSeeder.php](database/seeders/DatabaseSeeder.php) 文件中调用
+    ```bash
+    php artisan make:seeder StatusesTableSeeder
+    ```
+  
+- 运行数据填充
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+  
+- 提交代码
+    ```bash
+    git add -A
+    git commit -m "用户动态列表"
+    ```
+
