@@ -315,4 +315,15 @@
     git add -A
     git commit -m "用户动态列表"
     ```
+  
+- 生成 StatusesController
+    ```bash
+    php artisan make:controller StatusesController
+    ```
+  
+- 用户可以发布动态
+    ```bash
+    git add -A
+    git commit -m "完成用户发布动态"
+    ```
 
