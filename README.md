@@ -395,3 +395,9 @@
     git add -A
     git commit -m "完成社交统计信息, 修复页面样式"
     ```
+
+- 关注和粉丝列表页面
+    ```bash
+    git add -A
+    git commit -m "关注和粉丝列表页面"
+    ```
