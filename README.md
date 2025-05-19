@@ -339,3 +339,16 @@
     git add -A
     git commit -m "完成首页微博列表"
     ```
+  
+- 完成微博的删除功能
+    ```bash
+    git add -A
+    git commit -m "完成微博的删除功能"
+    ```
+  
+- 开发完微博相关功能后, 切换到 main 分支, 将 user-statuses 分支合并到主分支, 并推送到远程仓库
+    ```bash
+    git checkout main
+    git merge user-statuses
+    git push
+    ```
