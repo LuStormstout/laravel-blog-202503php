@@ -356,7 +356,7 @@
 - 创建一个新的分支来开发粉丝关系
     ```bash
     git checkout main
-    git checkout -b following-user
+    git checkout -b following-users
     ```
 
 - 创建关注关系的 migration 文件
@@ -411,4 +411,12 @@
     ```bash
     git add -A
     git commit -m "完成关注和取消关注功能"
+    ```
+- 完成首页用户和关注的人的动态流
+    ```bash
+    git add -A
+    git commit -m "完成首页用户和关注的人的动态流"
+    git checkout main
+    git merge following-users
+    git push
     ```
