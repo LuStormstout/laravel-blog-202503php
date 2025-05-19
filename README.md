@@ -327,3 +327,15 @@
     git commit -m "完成用户发布动态"
     ```
 
+## 📅 2025/05/19
+
+- 切换到 user-statuses 分支继续开发
+    ```bash
+    git checkout user-statuses
+    ```
+  
+- 完成首页微博列表
+    ```bash
+    git add -A
+    git commit -m "完成首页微博列表"
+    ```
