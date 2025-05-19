@@ -401,3 +401,14 @@
     git add -A
     git commit -m "关注和粉丝列表页面"
     ```
+  
+- 创建 FollowersController
+    ```bash
+    php artisan make:controller FollowersController
+    ```
+  
+- 完成关注和取消关注功能
+    ```bash
+    git add -A
+    git commit -m "完成关注和取消关注功能"
+    ```
