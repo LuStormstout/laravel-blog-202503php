@@ -358,7 +358,7 @@
     git checkout main
     git checkout -b following-user
     ```
-  
+
 - 创建关注关系的 migration 文件
     ```bash
     php artisan make:migration create_followers_table --create="followers"
@@ -368,14 +368,30 @@
     ```bash
     php artisan migrate
     ```
-  
+
 - 运行 ide-helper
     ```bash
     php artisan ide-helper:models -W
     ```
-  
+
 - 完成创建粉丝数据表
     ```bash
     git add -A
     git commit -m "创建粉丝数据表"
+    ```
+
+- 创建 FollowersTableSeeder
+    ```bash
+    php artisan make:seeder FollowersTableSeeder
+    ```
+
+- 运行数据填充
+    ```bash
+    php artisan migrate:fresh --seed
+    ```
+
+- 完成社交统计信息, 修复页面样式
+    ```bash
+    git add -A
+    git commit -m "完成社交统计信息, 修复页面样式"
     ```
