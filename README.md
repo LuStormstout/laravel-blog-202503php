@@ -304,23 +304,23 @@
     ```bash
     php artisan make:seeder StatusesTableSeeder
     ```
-  
+
 - 运行数据填充
     ```bash
     php artisan migrate:fresh --seed
     ```
-  
+
 - 提交代码
     ```bash
     git add -A
     git commit -m "用户动态列表"
     ```
-  
+
 - 生成 StatusesController
     ```bash
     php artisan make:controller StatusesController
     ```
-  
+
 - 用户可以发布动态
     ```bash
     git add -A
@@ -333,22 +333,49 @@
     ```bash
     git checkout user-statuses
     ```
-  
+
 - 完成首页微博列表
     ```bash
     git add -A
     git commit -m "完成首页微博列表"
     ```
-  
+
 - 完成微博的删除功能
     ```bash
     git add -A
     git commit -m "完成微博的删除功能"
     ```
-  
+
 - 开发完微博相关功能后, 切换到 main 分支, 将 user-statuses 分支合并到主分支, 并推送到远程仓库
     ```bash
     git checkout main
     git merge user-statuses
     git push
+    ```
+
+- 创建一个新的分支来开发粉丝关系
+    ```bash
+    git checkout main
+    git checkout -b following-user
+    ```
+  
+- 创建关注关系的 migration 文件
+    ```bash
+    php artisan make:migration create_followers_table --create="followers"
+    ```
+
+- 运行数据填充
+    ```bash
+    php artisan migrate
+    ```
+  
+- 运行 ide-helper
+    ```bash
+    php artisan ide-helper:models -W
+    ```
+  
+- 完成创建粉丝数据表
+    ```bash
+    git add -A
+    git commit -m "创建粉丝数据表"
     ```
