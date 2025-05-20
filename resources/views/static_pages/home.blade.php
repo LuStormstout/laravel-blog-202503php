@@ -7,7 +7,9 @@
                 <section class="status_form">
                     @include('shared._status_form')
                 </section>
-                <h4>微博列表</h4>
+                <h4 class="tw-text-4xl tw-mb-5">
+                    📝 动态列表
+                </h4>
                 <hr>
                 @include('shared._feed')
             </div>
@@ -17,6 +19,14 @@
                 </section>
                 <section class="stats mt-2">
                     @include('shared._stats', ['user' => Auth::user()])
+                </section>
+                <section class="tw-h-96 tw-w-full tw-mt-5 tw-border tw-border-gray-600 tw-rounded-3xl tw-shadow-2xl">
+                    <div class="tw-p-5 tw-text-center">
+                        <h4 class="tw-text-2xl">广告位招租</h4>
+                        <p class="tw-mt-5">这里是一个广告位，欢迎联系我！</p>
+                        <p class="tw-mt-5">QQ: 123456789</p>
+                        <p class="tw-mt-5">微信: lu_stormstout</p>
+                    </div>
                 </section>
             </aside>
         </div>

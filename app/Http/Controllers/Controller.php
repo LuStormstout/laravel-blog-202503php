@@ -15,5 +15,5 @@ abstract class Controller extends BaseController
      *
      * @var int
      */
-    public int $perPage = 10;
+    public int $perPage = 20;
 }

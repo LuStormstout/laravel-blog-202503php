@@ -19,16 +19,16 @@ class StaticPagesController extends Controller
             $feedItems = auth()->user()->feed()->paginate(30);
         }
 
-        return view('static_pages/home', compact('feedItems'));
+        return view('static_pages.home', compact('feedItems'));
     }
 
     public function help(): View
     {
-        return view('static_pages/help');
+        return view('static_pages.help');
     }
 
     public function about(): View
     {
-        return view('static_pages/about');
+        return view('static_pages.about');
     }
 }

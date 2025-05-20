@@ -9,7 +9,7 @@
 
 // 3. 你自己的全局自定义样式
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     // 注意：Tailwind 的 base 样式会设置 font-family 为 Figtree (根据你的 tailwind.config.js)
     // 如果你希望 Nunito 作为全局字体，你需要在这里或 Tailwind 配置中明确设置
